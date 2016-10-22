@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alexalves.padariadrivethru.CarrinhoActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF8000"
+        android:id="@+id/cabecalho"
+        android:orientation="horizontal"
+        android:padding="10dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:textColor="#FFF"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:id="@+id/texto1"
+            android:text="TriGo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:background="#FF8000"
+        android:layout_height="wrap_content"
+        android:id="@+id/rodape">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF8000"
+            android:id="@+id/btnCarrinho"
+            android:text="Finalizar Compra"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cabecalho"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:textSize="25dp"
+        android:id="@+id/titulo"
+        android:layout_marginTop="10dp"
+        android:text="Carrinho de Compras"/>
+
+    <ListView
+        android:layout_below="@+id/titulo"
+        android:id="@+id/lvProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvProduto"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:textSize="20dp"
+        android:id="@+id/total"
+        android:layout_marginTop="20dp"
+        android:text="TOTAL - R$ 22,14"/>
+
+</RelativeLayout>

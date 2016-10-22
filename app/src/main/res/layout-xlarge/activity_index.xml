@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.alexalves.padariadrivethru.IndexActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cabecalho"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/logo_oficial" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cabecalho"
+        android:layout_marginTop="250dp">
+        <Button
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:text="Login"
+            android:background="@drawable/button"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:shadowColor="#000"
+            android:shadowRadius="15"
+            android:id="@+id/btnAcessar"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:text="Cadastrar"
+            android:background="@drawable/button"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/btnCadastrar"
+            android:layout_below="@+id/btnAcessar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:shadowColor="#000"
+            android:shadowRadius="15"
+            android:singleLine="false" />
+
+        <Button
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:text="Sobre"
+            android:background="@drawable/button"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:shadowColor="#000"
+            android:shadowRadius="15"
+            android:id="@+id/btnSobre"
+            android:layout_below="@+id/btnCadastrar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:singleLine="false" />
+    </RelativeLayout>
+</RelativeLayout>
